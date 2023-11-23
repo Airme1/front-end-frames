@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { StrictMode } from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import card from './Card';
+// import CardList from './CardList';
+// import Card from './Card';
+import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'tachyons';
 
-ReactDOM.render(<card />, document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById('root')); 
+root.render(<App/>);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

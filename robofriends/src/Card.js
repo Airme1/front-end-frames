@@ -1,12 +1,13 @@
 import React from 'react';
+import { scryRenderedComponentsWithType } from 'react-dom/test-utils';
 
-const Card = () => {
+const Card = ({name, email, id}) => {
     return(
-        <div>
-            <img src='' alt="robots_pictures" />
+        <div className='tc bg-orange dib br4 pa2 ma2 grow bw2 shadow-5'>
+            <img src={`https://robohash.org/${id}?200x200`} alt="robots_pictures" />
             <div>
-                <h2>Jane Doe</h2>
-                <p>jane.doe@gmail.com</p>
+                <h2>{name}</h2>
+                <p>{email}</p>
             </div>
         </div>
     );
