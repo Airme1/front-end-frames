@@ -1,9 +1,9 @@
 import React, { StrictMode } from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-// import CardList from './CardList';
-// import Card from './Card';
-import App from './App';
+// import CardList from './components/CardList';
+// import Card from './components/Card';
+import App from './containers/App';
 import reportWebVitals from './reportWebVitals';
 import 'tachyons';
 
